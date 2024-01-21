@@ -1,11 +1,12 @@
-import './App.css'
+import './App.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function App() {
 
   return (
-    <div className='bg-secondary'>
-      <p className='text-dimWhite'>Hello World</p>
-      
+    <div>
+      <h1>Hello</h1>
+      <i class="fa-regular fa-pen-to-square"></i>
     </div>
   )
 }
