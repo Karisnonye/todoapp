@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTrashCan } from '@fortawesome/free-solid-svg-icons'
+import { faTrashCan } from '@fortawesome/free-solid-svg-icons';
 
 
 const Todo = () => {
@@ -21,9 +21,8 @@ const Todo = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8">
-      <h1 className="text-2xl font-bold mb-4">Todo List</h1>
-
+    <div className="max-w-md mx-auto mt-8 border-2 rounded-lg border-{purple}">
+      <h1 className="text-2xl font-bold mb-2 font-tiny">Task Manager</h1>      
       <div className="flex mb-4">
         <input
           type="text"
@@ -33,7 +32,7 @@ const Todo = () => {
           onChange={(e) => setNewTodo(e.target.value)}
         />
         <button
-          className="bg-blue-500 text-white p-2 rounded"
+          className="bg-gray-100 text-purple-800 p-2 mr-2 rounded"
           onClick={addTodo}
         >
           Add
@@ -44,14 +43,14 @@ const Todo = () => {
         {todos.map((todo, index) => (
           <li
             key={index}
-            className="flex items-center justify-between p-2 border-b border-gray-300"
+            className={`${index % 2 === 0 ? 'bg-purple-500' : 'bg-purple-800'} "flex items-center justify-between p-2 border-b border-gray-300 rounded-lg mb-2 hover:rounded"`}
           >
             <span>{todo}</span>
             <button
-              className="text-red-500 hover:text-red-700"
+              className="float-right"
               onClick={() => removeTodo(index)}
             >
-              <FontAwesomeIcon icon={faTrashCan} style={{color: "#4c7bcd",}} />
+              <FontAwesomeIcon icon={faTrashCan} style={{color: "#3b0764"}}/>
             </button>
           </li>
         ))}

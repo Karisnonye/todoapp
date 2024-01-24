@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import Smartwatch from '../assets/Smartwatch.png'
+
 
 const TodoWrapper = () => {
   const [typedText, setTypedText] = useState('');
-  const fullText = "Hello, let me organize your day!";
+  const fullText = "Hello, let's get you ready for the day!";
   const typingSpeed = 50; // Adjust the speed as needed
 
   useEffect(() => {
@@ -21,9 +23,17 @@ const TodoWrapper = () => {
   }, []);
 
   return (
-    <div className="text-5xl font-bold text-gray-800 text-center">
-      {typedText}
-      <span className="text-gray-800 animate-blink">|</span>
+    <div>
+      <div className="text-5xl font-bold text-gray-800 font-head text-center">
+        {typedText}
+        <div className="flex items-center justify-center h-screen -z-1 opacity-30">
+        <img
+          src={Smartwatch}
+          alt="Smartwatch"
+          className="max-w-full max-h-full"
+        />
+    </div>
+      </div>
     </div>
   );
 };

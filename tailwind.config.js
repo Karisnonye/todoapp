@@ -9,6 +9,10 @@ export default {
         bg_color: "rgb(58, 70, 139)",
         dimWhite: "rgba(255, 255, 255, 0.7)"
       },
+      fontFamily: {
+        'head': ['Rubik Doodle Shadow', 'system-ui'],
+        'font_tiny': ['Shantell Sans', 'cursive'],
+      },
     },
   },
   plugins: [],
