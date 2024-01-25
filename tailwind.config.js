@@ -11,7 +11,7 @@ export default {
       },
       fontFamily: {
         'head': ['Rubik Doodle Shadow', 'system-ui'],
-        'font_tiny': ['Shantell Sans', 'cursive'],
+        'tiny': ['Shantell Sans', 'cursive'],
       },
     },
   },

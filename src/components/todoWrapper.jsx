@@ -24,13 +24,13 @@ const TodoWrapper = () => {
 
   return (
     <div>
-      <div className="text-5xl font-bold text-gray-800 font-head text-center">
+      <div className="text-3xl mt-4 font-bold text-gray-800 font-head text-center md:text-4xl lg:text-5xl">
         {typedText}
-        <div className="flex items-center justify-center h-screen -z-1 opacity-30">
+        <div className="flex items-center justify-center -mt-4 h-screen opacity-30">
         <img
           src={Smartwatch}
           alt="Smartwatch"
-          className="max-w-full max-h-full"
+          className="max-w-full max-h-full overflow-hidden"
         />
     </div>
       </div>

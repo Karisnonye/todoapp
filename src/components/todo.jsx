@@ -21,9 +21,9 @@ const Todo = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-8 border-2 rounded-lg border-{purple}">
+    <div className="max-w-md mx-auto mt-8 z-10 font-tiny font-bold absolute inset-20 border-{purple}">
       <h1 className="text-2xl font-bold mb-2 font-tiny">Task Manager</h1>      
-      <div className="flex mb-4">
+      <div className="flex mb-4 text-sm md:text-xl">
         <input
           type="text"
           className="p-2 border border-gray-300 w-full mr-2"
